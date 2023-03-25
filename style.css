@@ -1,37 +1,123 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 1.2rem
 }
 
+:root{
+    --main-color:rgb(122 122 122 / 20%);
+    --details-color: rgba(213, 213, 213, 0.5);
+    --body-color:  linear-gradient(315deg, var(--main-color), white);
+    --body-color2: linear-gradient(135deg, var(--main-color), white);
+}
+
+
+body{
+    /* background-image:var(--body-color) */
+    /* background-color: brown; */
+    
+}
 #header{
-    display: block;
-    background-color: red;
+/* background-color: var(--main-color); */
+ 
 
 }
 
-
-.l{
-    width: 15px  ;
-    display: block;
+#bg-image{
+    /* background-image: url('./assets/img/bg-header.jpeg '); */
+    background-repeat: no-repeat;
+    background-position-y: 60px;
+    text-align: center;
+    height: 300px ;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
-.x{
-    width: 10px;
-    height: 10px;
-    border: 5px solid black;
+main{
+    width: 90%;
+    background-color: ;
+    margin-left:5%
 }
 
-#photo{
+main h2{
+    text-align: center;
+}
+
+li a{
+    padding: 0 8px 0 8px;
+    text-decoration: none;
+    background-color: var(--details-color);
+    border-radius: 10%;
+    box-shadow: 0 0 .5rem;
+}
+nav {
+    text-align: center;
+}
+nav li{
     display: inline-block;
-    background-color: blueviolet;
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 1%;
 }
 
-#photo img{
-    background-color: aqua;
+nav ul li:nth-child(2){
+    margin: 0 5% 0 5%;
 }
 
-#photo p{
-    background-color: blue;
-    max-width: 40%;
-    margin: 0px;
+#container{
+    /* background-color: var(--main-color); */
+    /* box-shadow: 20px 20px 1rem; */
+    border-radius: 0 18% 18% 0;
+}
+
+article{
+    background-image: var(--body-color);
+
+    display: block;
+    /* max-width: 90%; */
+    text-align: center;
+    
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1rem solid var(--body-color2);
+    border-radius: 0rem 0rem 0rem .8rem;
+      
+    justify-content: space-around;
+}
+
+main article section{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+article p, img{
+    display: inline-block;
+    text-align: justify;
+}
+img{
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 20%;
+}
+article p{
+    max-width: 60%;
+    justify-items: baseline ;
+}
+
+#habilidades{
+    /* max-width: 90%; */
+    border-radius: 0rem .8rem 0rem 0rem;
+
+    background-image: var(--body-color2);   
+}
+
+section h2{
+    text-align: center;
+}
+
+
+footer{
+    display: block;
+    height: 100% ;
 }
