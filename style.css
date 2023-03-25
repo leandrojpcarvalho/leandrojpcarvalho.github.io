@@ -4,5 +4,34 @@
 }
 
 #header{
-background-color: red;
+    display: block;
+    background-color: red;
+
+}
+
+
+.l{
+    width: 15px  ;
+    display: block;
+}
+
+.x{
+    width: 10px;
+    height: 10px;
+    border: 5px solid black;
+}
+
+#photo{
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+#photo img{
+    background-color: aqua;
+}
+
+#photo p{
+    background-color: blue;
+    max-width: 40%;
+    margin: 0px;
 }
